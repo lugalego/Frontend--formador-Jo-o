@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--FORMULÁRIOS BÁSICOS EM HTML-->
+<h1>Formulários básicos em HTML</h1>
+<form action="">
+<!-- form- elemento html -->
+
+<label for="nome"> Nome Completo</label>
+<input type="text" id="nome" name="nome" placeholder="Digite o seu nome" required minlength="5" maxlength="20"> 
+<!-- id - Identificador do input deve ser idêntico ao utilizado no for="" do label
+         type - tipo de dados que vamos introduzir
+         name - nome do campo que vai existir no servidor após envio do form
+         placeholder - texto temporário
+         required -> obrigatoriedade de preenchimento
+         minlength -> Tamanho mínimo de caracteres
+         maxlength-> Tamanho máximo de caracteres-->
+
+<br>
+<label for="email"> Email</label>
+<input type="email"
+       id="email"
+       name="email"
+       placeholder="Digite o seu email"
+       required
+       minlength="2"
+       maxlength="20"
+>
+<br>
+ 
+<label for="">Password</label>
+<input type="password"
+    id="password"
+    name="password"
+    required
+    minlength="8"
+>
+ 
+<label for="idade">Idade</label>
+<input type="number"
+    id="idade"
+    name="idade"
+    required
+    min="18"
+    max="100"
+    step="1"
+>
+
+<label for="">Data de nascimento</label>
+<input type="date"
+        id="dataNascimento"
+        name="dataNascimento"       
+
+>
+    
+<label for="horario">Horário</label>
+<input type="time" 
+        id="horario"
+        min="09:00"
+        max="18:00"
+    >
+
+<br>
+<label for="pais">País</label>
+<select name="pais" id="pais" required>
+    <!-- Select - lista vertical com opções-->
+    <option value="" disabled selected>Selecione um país..</option>
+    <!-- option é o elemento da lista -->
+    <!-- value - valor enviado ao servidor -->
+    <!-- disabled - opção não disponível para envio -->
+    <!-- selected - valor selecionado por defeito -->
+    <option value="pt">Portugal</option>
+    <option value="es">Espanha</option>
+    <option value="fr">França</option>
+    <option value="ds">Alemanha</option>
+    <option value="outro">Outro</option>
+</select>
+<br>
+
+<!-- label principal -->
+<label>Género</label>
+<!-- Input antes do label das opções-->
+<!-- Só pode ter um valor enviado-->
+<!-- Garantir que todas as opções estão sobre o mesmo valor do atributo "name"-->
+<br>
+<input type="radio" id="masculino" name="genero" value="masculino">
+<label for="masculino">Masculino</label>
+<input type="radio" id="feminino" name="genero" value="feminino">
+<label for="feminino">Feminino</label>
+<input type="radio" id="outro" name="genero" value="outro">
+<label for="outro">Outro</label>
+ 
+<br>
+
+<label> Interesses (Selecione todos os que se aplicam)</label>
+ 
+<br>
+ 
+<input type="checkbox" id="leitura" name="interesses" value="leitura">
+<label for="leitura">Leitura</label>
+<input type="checkbox" id="musica" name="interesses" value="musica">
+<label for="musica">Música</label>
+<input type="checkbox" id="fotografia" name="interesses" value="fotografia">
+<label for="fotografia">Fotografia</label>
+ 
+<br>
+<button type="submit">Enviar</button>
+ </form>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+h1, h2 {
+    color: brown;
+    font-size: 32px;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+}
+
+p{
+    font-size: 16px;
+}
+
+.receitas{
+    font-size: 18px;
+   
+}

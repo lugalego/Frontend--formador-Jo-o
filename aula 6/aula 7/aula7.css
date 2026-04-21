@@ -1,0 +1,80 @@
+/* Sintaxe base de uma regra CSS:
+seletor {
+    propriedade: valor;
+}
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    line-height: 1.5;
+    background-color: #f4f7fb;
+    color: #1f2937;
+}
+
+nav,
+.caixa {
+    margin-top: 20px;
+    padding: 16px;
+    background-color: white;
+    border: 1px solid #dbe4f0;
+    border-radius: 8px;
+}
+
+nav a,
+div a {
+    margin-right: 12px;
+    text-decoration: none;
+}
+
+/* Seletor agrupado:
+   aplica a mesma regra ao h1 e ao h2 */
+h1,
+h2 {
+    color: blue;
+}
+
+/* Seletor descendente:
+   seleciona um h2 dentro de um h1
+   nesta página a sintaxe é válida, mas não existe esse caso */
+h1 h2 {
+    color: green;
+}
+
+/* Seletor descendente:
+   seleciona todos os links dentro de uma div */
+div a {
+    color: #0f766e;
+}
+
+/* Seletor de classe:
+   especificidade maior do que a de elemento */
+.active {
+    color: #7c3aed;
+}
+
+/* Elemento + classe:
+   mais específico do que apenas .active */
+nav a.active {
+    color: #ea580c;
+    font-weight: bold;
+}
+
+/* Seletor de id:
+   mais específico do que classe e elemento */
+#link-prioritario {
+    color: #b91c1c;
+}
+
+/* !important:
+   força esta propriedade a ter prioridade */
+.importante {
+    color: #2563eb !important;
+}
+
+/* Ordem geral de prioridade / especificidade:
+   1. elemento           -> h1, div a
+   2. classe            -> .active
+   3. id                -> #link-prioritario
+   4. inline            -> style=""
+   5. !important        -> maior prioridade na propriedade */

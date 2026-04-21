@@ -1,0 +1,46 @@
+
+
+a{
+    padding: 20px;
+    margin: 20px;
+    background-color: blue;
+    color: white;
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10%;
+}
+
+
+
+div{
+    display: inline-block;
+    margin-top: 40px; /* é especifico do topo*/
+    margin: 20px; /* é para todos os lados*/
+    margin: 10 px 20 px
+}
+
+.caixa{
+    margin-left: 10%; /* afasta o paragrafo da esquerda 10% do limite da caixa, especifico */
+}
+
+.caixa2{ 
+    width: 200px;
+    padding: 20px;
+    border: 5px solid blue;
+    overflow:scroll; /* se tiver um texto muito grande, cria uma barrinha embaixo do elemnto qu dá para fazer scroll */
+    margin: 0 auto; /* o elemnto fica centrado */
+}
+
+
+
+
+.hero{
+    height: 100vh;
+    background-image: url();
+  }
+
+
+
+
+

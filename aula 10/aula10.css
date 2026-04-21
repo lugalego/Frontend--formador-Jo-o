@@ -1,0 +1,94 @@
+:root{
+    --cor-primaria: blue;
+    --cor-primaria: #2563eb;
+    --cor-texto: #1e293b;
+    --espacamento: 16px;
+    --radius: 8px;
+    --fonte-titulo: 'Space Grotesk', sans-serif;
+}
+  
+ 
+ 
+ 
+.cartao{
+    --cor-cartao: green;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.23);
+    border-radius: 15px;
+    padding: 10px;
+    width: 200px;
+    background-color: antiquewhite;
+    transition: background 1s;
+}
+ 
+.cartao:hover{
+    background: blueviolet;
+}
+ 
+.contentor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ 
+.btn{
+    background: goldenrod;
+    color: var(--cor-primaria);
+    margin-left: 40%;
+    transition: transform 0.5s, background 1s;
+    width: 300px;
+    cursor:pointer;
+}
+ 
+.btn:hover{
+    transform:translate(20px,-10px);
+    background: red;
+}
+ 
+.btn:active{
+ 
+}
+ 
+.btn:visited{
+ 
+}
+ 
+.btn:focus{
+ 
+}
+ 
+input:disabled{
+    background: grey;
+}
+ 
+input:checked{
+ 
+}
+input:valid{
+}
+input:invalid{
+ 
+}
+ 
+ 
+ 
+.img{
+    width: 100px;
+    transition: transform 0.3s;
+    transform: scale(1);
+    border-radius: 50%;
+    border: 2px solid black;
+ 
+}
+a{
+    border-radius: 50%;
+   
+}
+ 
+.img:hover{
+    transform: scale(1.1)
+}
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,21 @@
+
+Crie um algoritmo que leia um número e diga se é primo ou não.
+Deverá apresentar a resolução em pseudocódigo e em fluxograma. 
+Deve entregar um ficheiro PDF para o pseudocódigo
+ e um print legível do fluxograma. Boa sorte! 
+
+INICIO
+	Ler "Numero"
+	SE "Numero" > 1 
+	SE "Numero" % 1 
+	SE "Numero" % por "Numero"
+		Escrever: "numero primo"
+	SENÃO
+		Escrever: "não é primo"
+		
+	FIM SE
+FIM
+
+	
+		
+	

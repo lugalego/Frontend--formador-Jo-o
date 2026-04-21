@@ -1,0 +1,70 @@
+
+/*h1 é um seletor*/
+/* tudo isso é uma regra*/
+/*
+  Licao 4.1: Introducao ao CSS
+  - Seletor de elemento (h1)
+  - Seletor de classe (.cartao)
+  - Seletor de id (#critico)
+ 
+  Unidades CSS mais comuns:
+  - px: tamanho fixo em pixels
+  - %: percentagem do elemento pai
+  - em: relativo ao tamanho da fonte do elemento
+  - rem: relativo ao tamanho da fonte da raiz (html)
+  - vw/vh: percentagem do tamanho da janela (viewport)
+  - vmin/vmax: menor/maior lado do viewport
+  - ch: largura aproximada do caractere "0"
+  - fr: fracao de espaco livre em CSS Grid
+*/
+
+html{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    color: blue;
+    font-size: 64px;
+    
+}
+/* color: blue é uma declaração*/
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+input[type= "texto"]{
+    border: 1px solid rgb(161, 213, 124);
+}
+
+input[type= "texto"]{
+    border: 2px dashed red;
+    border-color: red;
+    border-style: dashed;
+    border-width: 2px;
+}
+/* .class Selecionar uma classe */
+.zeca {
+    font-size: 16px;
+    border-color: 1 px solid red;
+    width: 80%;
+}
+
+/* # SElecionar um id*/
+
+#p1{
+    font-size: 1em;
+}
+
+#p2{
+    font-size: 2em;
+    width: 50%;
+    border-color: 1 px solid blue;
+}
+
+#p3{
+    font-size: 0.5em;
+}
