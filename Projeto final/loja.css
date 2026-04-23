@@ -1,0 +1,59 @@
+.produtos {
+    display: grid;
+    /* Cria colunas de no mínimo 280px. Se couber mais, ele coloca lado a lado */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px; /* Espaço entre os pães */
+    max-width: 1200px;
+    margin: 40px auto 0;
+}
+
+.nossos_paes {
+    background: #fdfaf5;
+    border-radius: 15px;
+    overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.nossos_paes:hover {
+    transform: translateY(-10px); /* Efeito de flutuar ao passar o mouse */
+}
+
+.nossos_paes img {
+    width: 50%;      /* Ocupa metade da largura do container pai */
+    height: auto;    /* Calcula a altura proporcionalmente, evitando o corte */
+    object-fit: scale-down; /* Garante que a imagem nunca fique "esticada" */
+}
+
+.info-pao {
+    padding: 20px;
+}
+
+.info-pao h3 {
+    color: #5D4037;
+    margin: 0 0 10px 0;
+}
+
+.preco {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #8D6E63;
+    margin: 15px 0;
+}
+
+.btn-comprar {
+    background-color: #5D4037;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #3e2723;
+}

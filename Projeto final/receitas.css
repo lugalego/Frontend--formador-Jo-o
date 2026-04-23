@@ -9,7 +9,99 @@ p{
     font-size: 16px;
 }
 
+.caixa_2{
+    background-color: #f4e1c1; /* Um tom de bege/pão */
+    width: 100%;               /* Ocupa a folha toda horizontalmente */
+    padding: 10px 0;           /* Espaço interno em cima e embaixo */
+    display: flex;             /* Para centralizar o texto facilmente */
+    justify-content: flex-start;   /* Centraliza horizontalmente */
+    text-align: center;
+}
+  
 .receitas{
+    max-width: 600px;          
+    padding: 0 20px;        
+}
+
+  
+.receitas_1{
+    color: black;
+    font-size: 24px;
+    font-family: "Parisienne", cursive;
+    font-weight: 400;
+}
+
+section,
+.caixa {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dbe4f0;
+    border-radius: 8px;
+}
+
+.pao_1{
+    width: 50%;
+    height: 50vh;
+    background-image: url(https://receitadaboa.com.br/wp-content/uploads/2024/09/Pao-caseiro.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover; /* Faz a imagem preencher todo o espaço da div */
+}  
+
+.pao_1:hover{
+     transform:translate(20px,-10px);
+ }
+
+.pao_2{
+    width: 50%;
+    height: 50vh;
+    background-image: url(https://tse3.mm.bing.net/th/id/OIP.cI61ZcCIMFaHS-S5u4iSzAHaE8?rs=1&pid=ImgDetMain&o=7&rm=3);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover; /* Faz a imagem preencher todo o espaço da div */
+}   
+
+.pao_2:hover:hover{
+     transform:translate(20px,-10px);
+ }
+
+ .badge{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    background: yellow; /* preto */
+    color: red; /* texto branco */
+    padding: 5px 10px; /* espaco interno */
+    border-radius: 4px; /* cantos */
+    font-size: 18px; /* texto pequeno */
+    font-weight: bold; /* negrito */
+}
+
+.pao_3{
+    width: 50%;
+    height: 50vh;
+    background-image: url(https://maispinhais.com.br/wp-content/uploads/2025/03/Pao-de-leite-caseiro-super-fofinho-a-receita-facil-que-sempre-da-certo.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover; /* Faz a imagem preencher todo o espaço da div */
+} 
+
+.pao_3:hover{
+     transform:translate(20px,-10px);
+ }
+
+ .solucao{
+    display:relative;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 200px; /* largura */
+    padding: 20px; /* espaco interno */
+    background:#8D6E63; /* laranja */
+    color:white; /* texto branco */
+    text-align: center; /* texto centrado */
     font-size: 18px;
-   
+    border-radius: 4px; /* cantos */
 }
