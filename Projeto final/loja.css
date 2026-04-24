@@ -1,10 +1,12 @@
 .produtos {
+    .container-paes {
     display: grid;
-    /* Cria colunas de no mínimo 280px. Se couber mais, ele coloca lado a lado */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px; /* Espaço entre os pães */
-    max-width: 1200px;
-    margin: 40px auto 0;
+    /* Cria 3 colunas, cada uma com 1 fração do espaço total (fr) */
+    grid-template-columns: 1fr 1fr 1fr; 
+    
+    /* Cria um espaço de 20px entre cada item */
+    gap: 20px;
+}
 }
 
 .nossos_paes {
@@ -20,9 +22,9 @@
 }
 
 .nossos_paes img {
-    width: 50%;      /* Ocupa metade da largura do container pai */
-    height: auto;    /* Calcula a altura proporcionalmente, evitando o corte */
-    object-fit: scale-down; /* Garante que a imagem nunca fique "esticada" */
+    width: 50%;
+    max-width: 400px; /* Ajuste esse valor conforme o que você considera "metade" ideal */
+    height: auto;
 }
 
 .info-pao {
@@ -56,4 +58,18 @@
 
 .btn-comprar:hover {
     background-color: #3e2723;
+}
+
+
+@media (max-width: 768px) {
+    .btn-comprar {
+        padding: 15px 20px; 
+             
+        font-size: 18px; 
+       }
+
+    .btn-comprar:active {
+        background-color: #3e2723;
+        transform: scale(0.98); 
+    }
 }

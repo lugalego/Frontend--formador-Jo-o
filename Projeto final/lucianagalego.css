@@ -1,10 +1,9 @@
 .carrinho{
     display: flex;
     align-items: center;
-    justify-content: space-between; /* O segredo: Logo na esquerda, Carrinho na direita */
+    justify-content: flex-end;
     background-color: #f8f1e7; /* Tom pastel para destacar o carrinho */
     padding: 8px 15px;
-   
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -59,12 +58,11 @@
 .conteudo{
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 50vh;
     width: 100%;
     gap: 10px;
     border-radius: 15px;
     padding-top: 50px;
-    padding-bottom: 50px;
  }
 
  .linha{
@@ -100,7 +98,7 @@ background: rgb(255,255,255,0.5)
     transform:translate(20px,-10px);
  }
 
- .caixa{
+.caixa{
     background-color: #f4e1c1; /* Um tom de bege/pão */
     width: 100%;               /* Ocupa a folha toda horizontalmente */
     padding: 20px 0;           /* Espaço interno em cima e embaixo */
@@ -238,7 +236,76 @@ img{
 h3{
     color: brown;
     font-size: 24px;
-    font-weight: 700;
-    justify-content: center;
+    font-weight: 500;
+    text-align: start;
     font-family: "Parisienne", cursive;
 }
+
+.duvidas{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: start;
+    font-family: "Parisienne", cursive;
+
+}
+
+.e-mail{
+    display: flex;          /* Coloca os elementos um ao lado do outro */
+    align-items: center;    /* Alinha o botão e o ícone na mesma altura (meio) */
+    gap: 20px;             /* Cria um espaço entre o botão e o Instagram */
+}
+
+.imagem_3 {
+    display: flex;          /* Faz com que o ícone e o @ fiquem lado a lado também */
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.imagem_3 img {
+    width: 30px;            /* Ajusta o tamanho do símbolo para não ficar gigante */
+    height: auto;
+}
+
+/* Quando a tela for menor que 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    
+    /* 1. Faz a imagem e o texto ocuparem a largura toda (100%) em vez de 50% */
+    .pao, .historia, .e-mail {
+        flex-direction: column; /* Empilha os elementos */
+        height: auto;           /* Libera a altura fixa de 100vh se houver */
+    }
+
+    .imagem, .texto, .texto_2, .imagem_2 {
+        width: 100%;            /* Ocupa a largura total da tela */
+        height: auto;           /* Deixa a altura crescer conforme o conteúdo */
+        padding: 20px;
+    }
+
+    /* 2. Ajusta as imagens para não estourarem a tela */
+    .imagem {
+        height: 300px;         /* No celular, a imagem de fundo precisa de uma altura definida */
+    }
+
+    /* 3. Ajusta o tamanho dos textos e títulos */
+    h1 {
+        font-size: 2rem;       /* Diminui o título para caber na tela do celular */
+    }
+
+    .item {
+        width: 90%;            /* Faz os itens da loja ocuparem quase a tela toda */
+        margin: 10px auto;     /* Centraliza os itens */
+    }
+
+    /* 4. Ajusta o menu de contato/e-mail */
+    .e-mail {
+        justify-content: center; /* Centraliza no celular */
+        text-align: center;
+    }
+    
+}
+
+
+

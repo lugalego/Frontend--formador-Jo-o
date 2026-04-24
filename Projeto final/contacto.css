@@ -1,0 +1,39 @@
+
+.caixa_3{
+   background-color: #f4e1c1; 
+    width: 100%;               
+    padding: 10px 0;           
+    display: flex;            
+    justify-content: flex-start;  
+    text-align: center;             
+    
+}
+
+.contacto{
+    max-width: 600px;          
+    padding: 0 20px;   
+    align-items: center;
+}     
+.duvidas{
+    max-width: 600px;          
+    padding: 0 20px; 
+      
+}     
+
+@media (max-width: 768px) {
+    .caixa_3 {
+        justify-content: center; 
+        padding: 20px 0;
+    }
+
+    .contacto, .duvidas {
+        max-width: 100%; 
+        padding: 0 15px;
+        text-align: center; 
+    }
+
+    /
+    .duvidas {
+        font-size: 1.2rem; 
+    }
+}
