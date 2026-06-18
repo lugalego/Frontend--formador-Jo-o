@@ -1,0 +1,165 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: #FAF5E6;
+}
+
+.carrinho{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #f8f1e7; /* Tom pastel para destacar o carrinho */
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carrinho:hover {
+    background-color: #eaddca;
+}
+
+.icone-carrinho {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+.itens-contagem {
+    font-weight: bold;
+    color: #5D4037;
+}
+
+
+.layout{
+    display: grid;
+    /* Divide o ecrã em: 1 parte para a esquerda, 2 partes para a foto ao centro, 1 parte para a direita */
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 30px;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 40px;
+    align-items: center; /* Alinha tudo verticalmente pelo meio */
+}
+
+/* COMPORTAMENTO DA IMAGEM CENTRAL */
+.coluna-centro {
+    display: flex;
+    justify-content: center;
+}
+
+.coluna-centro img {
+    max-width: 100%;       /* Ocupa o espaço da coluna central */
+    max-height: 70vh;      /* Garante que a foto não fica mais alta que o ecrã */
+    width: auto;
+    height: auto;
+    object-fit: contain;   /* Mantém a proporção da imagem intacta */
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08); /* Sombra suave idêntica ao exemplo */
+}
+
+/* COMPORTAMENTO DAS COLUNAS LATERAIS */
+.coluna-lateral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Alinhamento dos textos conforme o exemplo */
+.esquerda {
+    text-align: left;
+}
+
+.direita {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todos os blocos internamente */
+    text-align: center;
+    gap: 25px; /* Espaço entre o título, a cesta, os ícones e o rodapé */
+}
+
+/* Títulos Superiores */
+.titulo-conceito h2 {
+    font-family: "Charm", cursive;
+    font-size: 2.8rem;
+    color: #1E5669;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1;
+}
+
+.titulo-conceito h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.2rem;
+    color: #222;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+/* A Ilustração da Cesta Central */
+.ilustracao-cesta {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ilustracao-cesta .emoji-cesta {
+    font-size: 6rem; /* Tamanho temporário do emoji */
+}
+
+.ilustracao-cesta img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* === A MINI GRELHA DE ÍCONES DE PRODUTOS === */
+.grelha-icones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas iguais */
+    gap: 10px; /* Espaço fino entre os quadradinhos */
+    background-color: #fcfbf7; /* Fundo ligeiramente off-white da área */
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Cada quadradinho individual de item */
+.quadrado-icone {
+    width: 45px;
+    height: 45px;
+    background-color: #ffffff; /* Fundo branco puro de cada quadrado */
+    border: 1px solid #eae5d9;  /* Linha fina em tom pastel */
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Se quiseres colocar imagens dentro dos quadradinhos no futuro */
+.quadrado-icone img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* === TEXTO INFERIOR === */
+.texto-inferior h4 {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.4rem;
+    color: #222;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: 500;
+}
+
+.texto-inferior p {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    color: #5D4037;
+    margin: 5px 0 0 0;
+    font-weight: 300;
+}

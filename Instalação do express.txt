@@ -1,0 +1,32 @@
+## 📦 Instalação do Express
+ 
+### Passo 1: Criar Projeto Node.js
+ 
+```bash
+# Criar pasta do projeto
+mkdir meu-servidor-express
+cd meu-servidor-express
+ 
+# Inicializar package.json
+npm init -y
+```
+ 
+**O que faz `npm init -y`?**
+- Cria ficheiro `package.json` com configurações default
+- `-y` aceita todas as opções automaticamente
+ 
+### Passo 2: Instalar Express
+ 
+```bash
+npm install express
+```
+ 
+**O que acontece:**
+- Express é adicionado a `dependencies` no `package.json`
+- Ficheiros instalados em `node_modules/`
+- Criado `package-lock.json` (regista versões exatas)
+ 
+cd ..
+ 
+cd nome_Pasta
+ 

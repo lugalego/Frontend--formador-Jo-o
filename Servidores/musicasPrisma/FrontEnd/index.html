@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca de Musica - PI01</title>
+ 
+  <!-- Liga este HTML ao ficheiro de estilos CSS. -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <!--
+    <header>: cabecalho da pagina. So texto, sem interacao.
+  -->
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <h1>Biblioteca de Musica</h1>
+      <p>A tua coleccao pessoal de favoritas</p>
+    </div>
+  </header>
+ 
+  <!--
+    <main>: conteudo principal da pagina.
+    Usar <main>, <header>, <section> em vez de so <div> ajuda
+    leitores de ecra e ferramentas a perceber a estrutura.
+  -->
+  <main class="conteudo">
+ 
+    <!--
+      ESTATISTICAS NO TOPO
+      ====================
+      Tres "caixas" com numeros vazios (-).
+      Cada <strong> tem um id para o JavaScript poder mudar o numero la dentro.
+      No app.js:  document.getElementById("stat-total").textContent = ...
+    -->
+    <section class="stats">
+      <div class="stat">
+        <strong id="stat-total">-</strong>
+        <span>Musicas</span>
+      </div>
+      <div class="stat">
+        <strong id="stat-favs">-</strong>
+        <span>Favoritas</span>
+      </div>
+      <div class="stat">
+        <strong id="stat-generos">-</strong>
+        <span>Generos</span>
+      </div>
+    </section>
+ 
+    <!--
+      FORMULARIO PARA ADICIONAR MUSICA
+      ================================
+      <form>: agrupa varios campos.
+      Quando o utilizador clica em "Adicionar" (o botao type="submit"),
+      o browser dispara um evento "submit" que o JS apanha em:
+        formulario.addEventListener("submit", ...)
+ 
+      O id="form-musica" e o que o JS usa para encontrar este form.
+    -->
+    <form class="formulario" id="form-musica">
+ 
+      <!--
+        <input type="text">: caixa de texto normal.
+          placeholder -> texto cinzento de exemplo (desaparece ao escrever)
+          maxlength   -> limite de caracteres aceites pelo browser
+          required    -> nao deixa submeter o form se estiver vazio
+        O id e o que o JS usa para ler o valor:
+          document.getElementById("titulo").value
+      -->
+      <input type="text" id="titulo" placeholder="Titulo da musica" maxlength="200" required>
+      <input type="text" id="artista" placeholder="Artista" maxlength="200" required>
+ 
+      <!--
+        <select>: menu dropdown.
+        Cada <option value="..."> e uma escolha possivel.
+        O JS le com:  document.getElementById("genero").value
+        (o "value" e o que esta no atributo value, nao o texto visivel)
+      -->
+      <select id="genero" required>
+        <option value="pop">Pop</option>
+        <option value="rock">Rock</option>
+        <option value="jazz">Jazz</option>
+        <option value="hip-hop">Hip-Hop</option>
+        <option value="eletronico">Eletronico</option>
+        <option value="classico">Classico</option>
+        <option value="outro">Outro</option>
+      </select>
+ 
+      <!--
+        <input type="number">: aceita apenas numeros.
+          min -> valor minimo permitido
+        O max e definido pelo JavaScript (= ano atual).
+      -->
+      <input type="number" id="ano" placeholder="Ano" min="1900" required>
+ 
+      <!--
+        <button type="submit">: ao clicar, dispara o evento submit no form.
+        Se nao indicarmos o type, "submit" e o default dentro de um form.
+      -->
+      <button type="submit">Adicionar</button>
+    </form>
+ 
+    <!--
+      AREAS VAZIAS QUE O JAVASCRIPT VAI PREENCHER
+      ===========================================
+      Estes dois elementos comecam vazios.
+      O JS escreve dentro deles com:
+        mensagem.textContent = "..."   (texto simples)
+        lista.innerHTML = "..."        (HTML)
+    -->
+    <div id="mensagem"></div>
+    <div class="lista" id="lista-musicas"></div>
+ 
+  </main>
+ 
+  <!--
+    <script src="..."> carrega e executa o ficheiro JavaScript.
+    Fica no FIM do <body> para garantir que todos os elementos
+    HTML acima ja existem quando o JS comeca a correr
+    (senao, document.getElementById(...) devolveria null).
+  -->
+  <script src="app.js"></script>
+</body>
+</html>
+ 
+ 

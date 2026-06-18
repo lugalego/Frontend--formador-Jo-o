@@ -1,0 +1,7 @@
+//dar informações as GIT quais os ficheiros que quer que ignore, exemplo do node_modules
+
+node_modules
+.env
+dist
+
+//ficheiros que iniciam com . são ignorados automaticamente pelo GIT

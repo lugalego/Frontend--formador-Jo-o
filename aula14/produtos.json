@@ -1,0 +1,29 @@
+
+   [
+    { "id": 1, "nome": "Teclado mecânico", "preco": 89.90, "stock": 15 },
+    { "id": 2, "nome": "Rato sem fios", "preco": 24.50, "stock": 42 },
+    { "id": 3, "nome": "Monitor 27\"", "preco": 299.00, "stock": 8 },
+    { "id": 4, "nome": "Webcam HD", "preco": 45.00, "stock": 0 },
+    { "id": 5, "nome": "Auscultadores Bluetooth", "preco": 79.99, "stock": 23 },
+    { "id": 6, "nome": "Cabo HDMI 2m", "preco": 8.50, "stock": 120 },
+    { "id": 7, "nome": "Pen USB 64GB", "preco": 12.99, "stock": 67 },
+    { "id": 8, "nome": "Disco SSD 1TB", "preco": 95.00, "stock": 18 },
+    { "id": 9, "nome": "Hub USB-C", "preco": 35.00, "stock": 0 },
+    { "id": 10, "nome": "Suporte para portátil", "preco": 22.00, "stock": 31 },
+    { "id": 11, "nome": "Microfone USB", "preco": 65.50, "stock": 9 },
+    { "id": 12, "nome": "Tapete de rato XL", "preco": 15.99, "stock": 88 },
+    { "id": 13, "nome": "Câmara IP", "preco": 55.00, "stock": 4 },
+    { "id": 14, "nome": "Router WiFi 6", "preco": 129.00, "stock": 12 },
+    { "id": 15, "nome": "Switch 8 portas", "preco": 39.90, "stock": 25 },
+    { "id": 16, "nome": "Cabo Ethernet 5m", "preco": 6.50, "stock": 200 },
+    { "id": 17, "nome": "Carregador 65W", "preco": 28.00, "stock": 0 },
+    { "id": 18, "nome": "Powerbank 20000mAh", "preco": 32.50, "stock": 19 },
+    { "id": 19, "nome": "Suporte de monitor", "preco": 49.00, "stock": 7 },
+    { "id": 20, "nome": "Iluminação RGB", "preco": 18.99, "stock": 54 },
+    { "id": 21, "nome": "Headset gaming", "preco": 89.00, "stock": 11 },
+    { "id": 22, "nome": "Cadeira gaming", "preco": 199.00, "stock": 3 },
+    { "id": 23, "nome": "Mesa elevatória", "preco": 350.00, "stock": 2 },
+    { "id": 24, "nome": "Ventoinha USB", "preco": 9.90, "stock": 76 },
+    { "id": 25, "nome": "Adaptador USB-C → HDMI", "preco": 19.50, "stock": 28 }
+  ]
+
